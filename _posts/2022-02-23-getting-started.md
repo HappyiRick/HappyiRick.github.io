@@ -9,7 +9,6 @@ tags: [getting started]
 pin: true
 ---
 
+# Start My Blog
 
-
-# Start My Blogging.
-
+__终于有了属于自己的Blog.__
