@@ -1,12 +1,12 @@
 ---
 title: Getting Started
 author:
-  name: trick
+  name: irick
   link: https://github.com/Happyirick
 date: 2022-02-23 17:55:00 +0800
-categories: [Blogging]
+categories: [Blog]
 tags: [getting started]
-pin: true
+pin: false
 ---
 
 # Start My Blog
