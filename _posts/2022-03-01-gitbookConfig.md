@@ -1,4 +1,14 @@
-# Gitbook配置--开启写作之路 
+---
+title: Gitbook配置--开启写作之路 
+author:
+  name: irick
+  link: https://github.com/Happyirick
+date: 2022-02-28 19:55:00 +0800
+categories: [Blog, 日有寸进]
+tags: [日有寸进]
+pin: false
+
+---
 
 在本文中，将使用Gitbook + Github pages搭建属于自己的Blog，终端环境为zsh，设备为Macbook. 
 
