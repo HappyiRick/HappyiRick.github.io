@@ -1,5 +1,5 @@
 ---
-title: Gitbook配置--开启写作之路 
+title: Gitbook配置--开启写作之路 (上)
 author:
   name: irick
   link: https://github.com/Happyirick
