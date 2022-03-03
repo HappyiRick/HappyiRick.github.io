@@ -68,7 +68,7 @@ Actions是Github提供的一款CI工具，可以很便利地在我们提交代�
 
    ![image-20220303171216302](https://cdn.jsdelivr.net/gh/HappyiRick/Album/Blogimg/202203031729418.png)
 
-3. 部署脚本代码如下
+部署脚本代码如下：
 
 ``````yaml
 name: auto-generate-gitbook
@@ -116,6 +116,8 @@ steps:
     git branch -M master
     git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
 ``````
+
+
 
 这样每次push之后，Actions上便会自动执行该脚本，失败则会给所填写的邮箱发送邮件提醒，整体来说还是非常高效的
 
