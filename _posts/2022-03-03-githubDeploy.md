@@ -20,19 +20,19 @@ pin: false
 
 ### 1.1 建立github pages仓库
 
-仓库名称必须为 <你的github名称>.github.io
+仓库名称必须为  ${你的github名称}.github.io
 
 ![image-20220303155540913](https://cdn.jsdelivr.net/gh/HappyiRick/Album/Blogimg/202203031729720.png)
 
 ### 1.2 设置主页
 
-进入`<your name>.github.io`仓库，点击`Settings` > `Pages` >> `Theme chooser` 
+进入` ${你的github username}.github.io`仓库，点击`Settings` > `Pages` >> `Theme chooser` 
 
 然后就可以选择一个jeklly提供的模板主题，同时，github会默认建立名为`gh-pages` 的部署分支，其即为我们个人主页静态资源的部署分支. 当然，也可以选择fork其他自定义主题的仓库. 
 
 ![image-20220303160813268](https://cdn.jsdelivr.net/gh/HappyiRick/Album/Blogimg/202203031729414.png)
 
-稍等两分钟之后，访问[https://.github.io](https://happyirick.github.io/) 即可访问你的个人github主页.
+稍等两分钟之后，访问[https:// ${你的github名称}.github.io](https://happyirick.github.io/) 即可访问你的个人github主页.
 
 ## 2.建立Gitbook博客仓库
 
