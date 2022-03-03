@@ -42,8 +42,8 @@ pin: false
 2. 进入本地gitbook目录下, 并执行以下命令
    1. `git init `
    2. `git remote add origin xxx.git `
-   3. `git checkout -b gh-pages` # 新建本地分支
-   4. `git push --set-upstream origin gh-pages` # 绑定远端分支，若没有则新建
+   3. `git checkout -b gh-pages` 新建本地分支
+   4. `git push --set-upstream origin gh-pages`  绑定远端分支，若没有则新建
 3. 在该仓库github中进入`Setting` > `Pages` >`Source` , 选择gh-pages作为部署分支
 
 ## 3.通过Github Actions实现自动部署
@@ -70,7 +70,7 @@ Actions是Github提供的一款CI工具，可以很便利地在我们提交代�
 
 3. 部署脚本代码如下
 
-   ```
+   ```yaml
    name: auto-generate-gitbook
    on:                                 #在master分支上进行push时触发  
      push:
