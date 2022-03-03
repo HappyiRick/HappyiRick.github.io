@@ -70,54 +70,7 @@ Actions是Github提供的一款CI工具，可以很便利地在我们提交代�
 
 部署脚本代码如下：
 
-``````yaml
-name: auto-generate-gitbook
-on:                                 #在master分支上进行push时触发  
-  push:
-    branches:
-
-   - master
-
-jobs:
-  main-to-gh-pages:
-    runs-on: ubuntu-latest
-steps:                          
-- name: checkout master
-  uses: actions/checkout@v2
-  with:
-    ref: master
-        
-- name: install nodejs
-  uses: actions/setup-node@v1
-  
-- name: configue gitbook
-  run: |
-    npm install -g gitbook-cli          
-    gitbook install
-            
-- name: generate _book folder
-  run: |
-    gitbook build
-            
-- name: push _book to branch gh-pages 
-  env:
-    TOKEN: ${{ secrets.TOKEN }}
-    REF: github.com/${{github.repository}}
-    MYEMAIL: xxx@xx.com                  # ！！记得修改为自己github设置的邮箱
-    MYNAME: ${{github.repository_owner}}          
-  run: |
-    cd _book
-    git config --global user.email "${MYEMAIL}"
-    git config --global user.name "${MYNAME}"
-    git init
-    git remote add origin https://${REF}
-    git add . 
-    git commit -m "Updated By Github Actions With Build ${{github.run_number}} of ${{github.workflow}} For Github Pages ${REF}"
-    git branch -M master
-    git push --force --quiet "https://${TOKEN}@${REF}" master:gh-pages
-``````
-
-
+[deploy.yml](https://github.com/HappyiRick/MyBlog/blob/master/.github/workflows/deploy.yml)
 
 这样每次push之后，Actions上便会自动执行该脚本，失败则会给所填写的邮箱发送邮件提醒，整体来说还是非常高效的
 
