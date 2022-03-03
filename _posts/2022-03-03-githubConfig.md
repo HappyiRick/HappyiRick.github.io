@@ -4,7 +4,7 @@ author:
   name: irick
   link: https://github.com/Happyirick
 date: 2022-03-03 18:55:00 +0800
-categories: [日有寸进, 写作工具]
+categories: [日有寸进]
 tags: [日有寸进, 写作工具]
 pin: false
 
