@@ -24,13 +24,13 @@ Clang-format 是一个代码格式化工具，能够为C/C++/Java/JavaScript/JSO
 
 ### 安装clang-format
 
-\#####通过homebrew下载
+#### 通过homebrew下载
 
 ```
 brew install clang-format
 ```
 
-\#####查看是否安装成功
+#### 查看是否安装成功
 
 ```
 clang-format --version
